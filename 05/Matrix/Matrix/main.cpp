@@ -101,7 +101,7 @@ int main()
 		cout << endl;
 	}
 
-	Matrix<double> mat5 = 10 * mat4 * 2;
+	Matrix<double> mat5 = 10 * mat4 * 2.0;
 	for (int i = 0; i < mat5.rows(); ++i)
 	{
 		for (int j = 0; j < mat5.cols(); ++j)

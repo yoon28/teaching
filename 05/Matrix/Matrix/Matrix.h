@@ -25,9 +25,9 @@ public:
 	Matrix<T> operator+(Matrix<T> &B);
 	Matrix<T> operator-(Matrix<T> &B);
 	Matrix<T> operator*(Matrix<T> &B);
-	Matrix<T> operator*(T k);
+	Matrix<T> operator*(double k);
 
-	friend Matrix<T> operator*(T k, Matrix<T> &B) { return B * k; };
+	friend Matrix<T> operator*(double k, Matrix<T> &B) { return B * k; };
 };
 
 template <class T>
@@ -145,7 +145,7 @@ Matrix<T> Matrix<T>::operator*(Matrix<T> &B)
 	return C;
 }
 template <class T>
-Matrix<T> Matrix<T>::operator*(T k)
+Matrix<T> Matrix<T>::operator*(double k)
 {
 	Matrix<T> C(r, c);
 
